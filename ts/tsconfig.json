@@ -1,0 +1,26 @@
+{
+    "version": "1.5.0-alpha",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es2015",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "outDir": "../js",
+        "lib": ["es2015", "dom"]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "filesGlob": [
+        "./ts/*.ts",
+        "./ts/**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./index.ts",
+        "./service/sweetalert2.service.ts"
+    ]
+}

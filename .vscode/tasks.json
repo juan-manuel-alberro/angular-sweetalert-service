@@ -1,0 +1,11 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "isBuildCommand": true,
+    "command": "tsc",
+    "isShellCommand": true,
+    "args": ["-p", "./ts"],
+    "showOutput": "always",
+    "problemMatcher": "$tsc"
+}
