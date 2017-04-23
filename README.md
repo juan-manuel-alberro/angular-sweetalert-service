@@ -1,4 +1,4 @@
-# Angular wrapper for SweetAlert2
+# Angular wrapper for SweetAlert2
 
 This is a simple wrapper to use SweetAlert2 in Angular projects, it works with `angular-cli` also`
 
@@ -14,14 +14,14 @@ or if you prefer Yarn
 
 In your `app.module` just include the service
 
-```
+```js
 ...
 import SweetAlertService from 'angular-sweetalert2';
 ```
 
 Then add the service as a provider
 
-```
+```js
 @NgModule({
   declarations: [
     ...
@@ -42,7 +42,7 @@ Then add the service as a provider
 
 Now you have the service available across the application. Now you need to call the service in your component and that's it.
 
-```
+```js
 // myComponent.ts
 
 ...
@@ -72,7 +72,7 @@ export class MyDummyClass {
 
 You can extend the default options by just passing a configuration object into the method, like this:
 
-```
+```js
 const options = {
   title: 'Are you sure?',
   text: "You won't be able to revert this!",
@@ -89,7 +89,7 @@ SweetAlert.confirm(options);
 
 If you use Typescript, if you don't use it you should, you can access the types since the service has the `d.ts` file available.
 
-```
+```js
 export declare class SweetAlertService {
     constructor();
     swal(): any;
