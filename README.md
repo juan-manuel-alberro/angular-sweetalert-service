@@ -16,7 +16,7 @@ In your `app.module` just include the service
 
 ```js
 ...
-import SweetAlertService from 'angular-sweetalert-service';
+import { SweetAlertService } from 'angular-sweetalert-service';
 ...
 ```
 
@@ -47,7 +47,7 @@ Now you have the service available across the application. Now you need to call 
 // myComponent.ts
 
 ...
-import SweetAlertService from 'angular-sweetalert';
+import { SweetAlertService } from 'angular-sweetalert';
 
 @Component({
   selector: 'app-foobar',
