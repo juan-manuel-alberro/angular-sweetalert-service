@@ -1,6 +1,6 @@
 # Angular wrapper for SweetAlert2
 
-This is a simple wrapper to use (SweetAlert)[https://limonte.github.io/sweetalert2/] in Angular projects, it works with `angular-cli` also
+This is a simple wrapper to use [SweetAlert](https://limonte.github.io/sweetalert2/) in Angular projects, it works with `angular-cli` also
 
 ### Install
 
@@ -86,7 +86,7 @@ const options = {
 SweetAlert.confirm(options);
 ```
 
-## Chaining & Promises
+### Chaining & Promises
 
 ```js
     this.alertService.confirm({
