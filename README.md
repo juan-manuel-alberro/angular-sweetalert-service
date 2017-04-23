@@ -1,14 +1,14 @@
 # Angular wrapper for SweetAlert2
 
-This is a simple wrapper to use SweetAlert2 in Angular projects, it works with `angular-cli` also`
+This is a simple wrapper to use (SweetAlert)[https://limonte.github.io/sweetalert2/] in Angular projects, it works with `angular-cli` also
 
 ### Install
 
-`npm install --save angular-sweetalert2`
+`npm install --save angular-sweetalert-service`
 
 or if you prefer Yarn
 
-`yarn add angular-sweetalert2`
+`yarn add angular-sweetalert-service`
 
 ### Include in your app
 
@@ -16,7 +16,8 @@ In your `app.module` just include the service
 
 ```js
 ...
-import SweetAlertService from 'angular-sweetalert2';
+import SweetAlertService from 'angular-sweetalert-service';
+...
 ```
 
 Then add the service as a provider
@@ -83,6 +84,20 @@ const options = {
   confirmButtonText: 'Yes, delete it!'
 };
 SweetAlert.confirm(options);
+```
+
+## Chaining & Promises
+
+```js
+    this.alertService.confirm({
+      title: 'Delete account?'
+    })
+    .then(() => {
+      this.alertService.success({
+        title: 'Account deleted'
+      });
+    })
+    .catch(() => console.log('canceled'));
 ```
 
 ### Typescript
